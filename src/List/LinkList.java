@@ -1,10 +1,9 @@
 package List;
 
-public class CreateList {
 
-    public static class LinkList{
-        private int data;
-        private LinkList next;
+public class LinkList{
+        public  int data;
+        public LinkList next;
         //头插法
         public LinkList top_create(int len) {
             LinkList head = null;
@@ -51,10 +50,5 @@ public class CreateList {
                 list = list.next;
             }
         }
-    }
-    public static void main(String[] args) {
-        LinkList list = new LinkList();
-        list = list.top_create(10);
-        list.display(list);
-    }
 }
+
